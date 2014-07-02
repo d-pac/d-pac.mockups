@@ -1,7 +1,10 @@
 {
   "name": "d-pac-mockups",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-bump": "0.0.14",
+    "semver": "^2.3.1"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.7.1",
