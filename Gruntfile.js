@@ -27,6 +27,13 @@ module.exports = function (grunt) {
         // Project settings
         config: config,
 
+        generate : {
+            options : {
+                dest : '<%= config.app %>',
+                prompt : false
+            }
+        },
+
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             livereload: {
