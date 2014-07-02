@@ -14,6 +14,7 @@ module.exports = function( grunt,
                     files   : [
                         '<%= config.app %>/{,*/}*.html',
                         '<%= config.app %>/styles/*.css',
+                        '<%= config.app %>/scripts/*.js',
                         '<%= config.app %>/images/{,*/}*'
                     ]
                 }
