@@ -25,7 +25,10 @@ var judgeTour = new Tour( {
             content : "Wanneer je klaar bent kun je een van de twee papers kiezen als beste."
         }
     ],
-    storage: false
+    storage: false,
+    onEnd : function(){
+        document.location.href = 'index.html';
+    }
 } );
 
 // Initialize the tour
