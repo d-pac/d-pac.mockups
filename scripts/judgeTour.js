@@ -2,12 +2,12 @@
 
 // Instance the tour
 var judgeTour = new Tour( {
-    steps : [
+    steps   : [
         {
             element : "#explanation",
             title   : "Welkom",
             content : "Lees eerst aandachtig de uitleg, zodat je de opdracht goed begrijpt.",
-            orphan: true
+            orphan  : true
         },
         {
             element : "#viewer-left",
@@ -25,9 +25,10 @@ var judgeTour = new Tour( {
             content : "Wanneer je klaar bent kun je een van de twee papers kiezen als beste."
         }
     ],
-    storage: false,
-    onEnd : function(){
-        document.location.href = 'index.html';
+    storage : false,
+//    backdrop : true,
+    onEnd   : function(){
+        document.location.href = '/';
     }
 } );
 
