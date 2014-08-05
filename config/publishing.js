@@ -9,8 +9,12 @@ module.exports = function( grunt,
                     base : 'app'
                 },
                 src     : ['**']
+            },
+            'bump' : {
+                options : {
+                    pushTo : 'origin'
+                }
             }
-
         }
     }
 }
