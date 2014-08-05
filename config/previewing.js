@@ -7,12 +7,19 @@ module.exports = function( grunt,
         tasks : {
             // Watches files for changes and runs tasks based on the changed files
             watch   : {
+                build :{
+                    files : [
+                        '<%= config.app %>/src/{,*/}*.html'
+                    ],
+                    tasks : 'build'
+                },
                 livereload : {
                     options : {
                         livereload : '<%= connect.options.livereload %>'
                     },
                     files   : [
-                        '<%= config.app %>/{,*/}*.html',
+                        '<%= config.app %>/index.html',
+                        '<%= config.app %>/static/{,*/}*.html',
                         '<%= config.app %>/styles/*.css',
                         '<%= config.app %>/scripts/*.js',
                         '<%= config.app %>/images/{,*/}*'

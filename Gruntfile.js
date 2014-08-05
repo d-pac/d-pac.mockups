@@ -34,6 +34,8 @@ module.exports = function( grunt ){
 
     } ) );
 
+    grunt.registerTask("build", ["includes"]);
+
     grunt.registerTask( 'serve', function( target ){
         grunt.task.run( [
             'connect:livereload',

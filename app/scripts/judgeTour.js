@@ -27,7 +27,7 @@ var judgeTour = new Tour( {
     ],
     storage: false,
     onEnd : function(){
-        document.location.href = 'index.html';
+        document.location.href = '/';
     }
 } );
 
