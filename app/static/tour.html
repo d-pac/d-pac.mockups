@@ -143,10 +143,12 @@
                     data-toggle="tooltip" data-placement="top" title="Gebruik de knoppen om de linkse paper fullscreen te bekijken of te downloaden."
                     width='100%' height='400'
                     allowfullscreen webkitallowfullscreen></iframe>
-            <label for="notes-left">Notities</label>
+            <label for="notes-left"
+                   class="notes-label collapsed"
+                   data-toggle="collapse" data-target="#notes-left">Notities</label>
             <textarea id="notes-left"
                       data-toggle="tooltip" data-placement="top" title="Noteer hier je opmerkingen bij de linkse paper."
-                      class="form-control" rows="6"></textarea>
+                      class="form-control collapse" rows="6"></textarea>
         </div>
         <div class="col-md-6 column">
             <iframe id="viewer-right"
@@ -154,10 +156,12 @@
                     data-toggle="tooltip" data-placement="top" title="Gebruik de knoppen om de rechtse paper fullscreen te bekijken of te downloaden."
                     width='100%' height='400'
                     allowfullscreen webkitallowfullscreen></iframe>
-            <label for="notes-right">Notities</label>
+            <label for="notes-right"
+                   class="notes-label collapsed"
+                   data-toggle="collapse" data-target="#notes-right">Notities</label>
             <textarea id="notes-right"
                       data-toggle="tooltip" data-placement="top" title="Noteer hier je opmerkingen bij de rechtse paper."
-                      class="form-control" rows="6"></textarea>
+                      class="form-control collapse" rows="6"></textarea>
         </div>
     </div>
 <!-- END includes/comparison.html -->
