@@ -4,12 +4,12 @@ module.exports = function( grunt,
                            opts ){
     var config = opts.config;
     return {
-        tasks: {
+        tasks : {
             includes : {
-                files : {
-                    src  : ['app/src/*.html'],
-                    dest : 'app/static',
-                    flatten: true
+                files   : {
+                    src     : ['app/src/*.html'],
+                    dest    : 'app/static',
+                    flatten : true
                 },
                 options : {
                     template : "<!-- BEGIN {{fileName}} -->\n{{file}}<!-- END {{fileName}} -->"

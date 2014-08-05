@@ -7,7 +7,7 @@ module.exports = function( grunt,
         tasks : {
             // Watches files for changes and runs tasks based on the changed files
             watch   : {
-                build :{
+                build      : {
                     files : [
                         '<%= config.app %>/src/{,*/}*.html'
                     ],
