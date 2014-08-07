@@ -55,7 +55,7 @@ module.exports = function( grunt ){
             bumpTask += ':' + versionOrType;
         }
         grunt.task.run( [
-            bumpTask, 'build', 'bump-commit'
+            bumpTask, 'build', 'bump-commit', 'publish'
         ] );
     } );
 
